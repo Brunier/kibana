@@ -1,0 +1,5 @@
+<div ng-controller="BubbleController">
+	<div class="bubble" ng-attr-data-tooltip="{{tag.tooltip}}" ng-repeat="tag in tags" ng-style="{'width' : tag.bubbleSize +'px', 'height' :  tag.bubbleSize +'px', 'background' : tag.bubbleColor}">
+		<span class="bubble-label" ng-style="{'font-size' : tag.labelSize+'px', 'line-height' : tag.bubbleSize+'px' }">{{tag.labelName}}</span>
+	</div>
+</div>
